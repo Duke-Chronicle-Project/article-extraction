@@ -17,7 +17,14 @@ from bs4 import BeautifulSoup
 import re, json, time, os
 
 def getTotPage(fileNum):
+    """Get the total number of pages of the given issue from its library page
 
+    Args:
+        fileNum (str): five-digit id for the target issue
+
+    Returns:
+        int: total number of pages of the requested issue
+    """
     html = requests.get('https://library.duke.edu/digitalcollections/dukechronicle_dchnp%s/' % fileNum).text
 
     soup = BeautifulSoup(html, 'html.parser')

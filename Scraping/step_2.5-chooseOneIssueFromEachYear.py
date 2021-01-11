@@ -1,4 +1,5 @@
-# Step 2.5: randomly choose one issues from each year and write their keys into 'chosenIssue.json'
+# Step 2.5: randomly choose one issues from each year and write their keys into
+# 'chosenIssue.json' for picking a small subset of files
 
 # File input: 
 #   `fileList.json`: a dictionary with five digit number as key to each issue,
