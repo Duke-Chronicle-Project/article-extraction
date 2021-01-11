@@ -80,8 +80,8 @@ def parseHOCR(path, save=False):
                                       'pageNum', 'pageX0', 'pageY0', 'pageX1', 'pageY1', 'image'])
     if save:
         df.to_csv(path.replace('.hocr', '.csv'), index=False)
-        print(f'Saved as {path.replace('.hocr', '.csv')}')
+        print(f"Saved as {path.replace('.hocr', '.csv')}")
 
 
 if __name__ == '__main__':
-    parseHOCR('./test/sampleInput.hocr', save=True)
+    parseHOCR('./test/test.hocr', save=True)
