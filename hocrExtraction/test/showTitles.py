@@ -41,5 +41,5 @@ def showTitles(path):
 
 
 if __name__ == '__main__':
-    path = './testPartID.csv'
+    path = './testPartIDSpace.csv'
     showTitles(path)
